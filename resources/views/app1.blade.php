@@ -86,14 +86,40 @@
                     First Project
                 </div>
 
-                <div class="links">
-                    <a href="#" class="btn btn-primary"><h3>Home</h3></a>
-                    <a href="https://laracasts.com" class="btn btn-secondary"><h3>About</h3></a>
-                    <a href="https://laravel-news.com" class="btn btn-success"><h3>Contact</h3></a>
-                    <a href="{{route('product')}}" class="btn btn-info"><h3>Register</h3></a>
-                    <a href="{{route('list')}}" class="btn btn-primary"><h3>Product list</h3></a>
-                    <a href="{{route('product_catagory')}}" class="btn btn-danger"><h3>Add Catagory</h3></a>
-                </div>
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                      
+                      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li>
+                            <a class="btn btn-primary" href="#">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                          <a class="btn btn-primary" href="#">About <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                          <a class="btn btn-primary" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="btn btn-primary" href="{{route('product')}}">Register</a>
+                          </li>
+                          <li class="nav-item active">
+                            <a class="btn btn-primary" href="{{route('list')}}">Product list</a>
+                          </li>
+                          <li class="nav-item active">
+                            <a class="btn btn-primary" href="{{route('product_catagory')}}">Add Catagory</a>
+                          </li>
+                        
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </nav>
             </div>
         </div>
 

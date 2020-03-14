@@ -27,5 +27,9 @@ Route::get('/catagory','CatagoryController@pro_catagory')->name('product_catagor
 Route::post('/addcreate','CatagoryController@pro_addcatagory')->name('product_add');
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome'); 
 });
+
+Auth::routes(['verify' => true]);
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -104,7 +104,13 @@
 
 @extends('app1')
 
+
+
 @section('content1')
 
+
+
+
 @endsection 
+
 
